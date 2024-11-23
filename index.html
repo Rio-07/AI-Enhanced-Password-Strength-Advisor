@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Enhanced Password Strength Advisor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">🔒 AI-Enhanced Password Strength Advisor</h1>
+      <p class="subtitle">Enter your password below to test its strength and check if it's secure.</p>
+    </header>
+    
+    <main>
+      <div class="password-box">
+        <input 
+          type="password" 
+          id="password" 
+          placeholder="Type your password here..." 
+          oninput="evaluatePassword()" 
+        />
+        <div id="strength-bar" class="strength-bar"></div>
+        <p id="strength-text" class="strength-text"></p>
+        <div id="breach-message" class="breach-message"></div>
+      </div>
+
+      <div id="suggestions">
+        <h2>Password Improvement Tips 💡</h2>
+        <ul id="tips-list"></ul>
+      </div>
+    </main>
+    
+    <footer>
+      <p>🔐 Designed to protect you, one password at a time.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
